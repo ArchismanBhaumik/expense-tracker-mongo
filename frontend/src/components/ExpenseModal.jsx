@@ -17,7 +17,7 @@ export default function ExpenseModal({ show, onClose, onSaved }) {
       return alert("Please fill all fields correctly");
     }
 
-    await fetch("http://localhost:5000/expenses", {
+    await fetch("https://expense-tracker-backend-ogto.onrender.com/expenses", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
