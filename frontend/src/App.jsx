@@ -8,7 +8,7 @@ export default function App() {
   const [sortOrder, setSortOrder] = useState("desc"); // newest first
 
   const load = async () => {
-    const res = await fetch("http://localhost:5000/expenses");
+    const res = await fetch("https://expense-tracker-backend-ogto.onrender.com/expenses");
     setExpenses(await res.json());
   };
 
