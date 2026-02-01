@@ -28,6 +28,12 @@ export default function ExpenseModal({ show, onClose, onSaved }) {
 
     onSaved();
     onClose();
+    setData({
+    title: "",
+    amount: "",
+    category: "",
+    date: today
+  });
   };
 
   return (
